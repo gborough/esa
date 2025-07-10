@@ -11,3 +11,5 @@ Enhanced Suffix Arrary For OCaml à la Daisuke Okanohara and related authors(htt
 - Minimum allocations possible to align with C++ performance
 
 ## Example
+
+See: https://github.com/gborough/esa/blob/a4528b695c3a15e79f5b7a7d9c8806b13dbe3834/test/test_esa.ml#L88
