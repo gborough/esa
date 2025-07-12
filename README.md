@@ -1,3 +1,5 @@
+[![CI](https://github.com/gborough/esa/actions/workflows/ci.yml/badge.svg)](https://github.com/gborough/esa/actions/workflows/ci.yml)
+
 [Documentation](https://gborough.github.io/esa/esa)
 
 # Enhanced Suffix Array - esa
