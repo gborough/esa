@@ -18,7 +18,8 @@
 (package
  (name esa)
  (synopsis "Enhanced Suffix Array")
- (description "Enhanced Suffix Array")
+ (description
+  "Pure OCaml implementation of Enhanced Suffix Array, with a focus on minimising allocations to stay close to the reference C++ implementation.")
  (depends
   (ocaml
    (>= 4.08.0))

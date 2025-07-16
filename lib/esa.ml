@@ -178,7 +178,7 @@ let rec suffix_sort (str_input : t) (sa_output : t) (free_size : int)
       let v = Array1.unsafe_get sa_output i in
       if v <> 0 then (
         Array1.unsafe_set sa_output (ra_index + !j) (v - 1);
-        decr j)
+        if !j >= 0 then decr j)
     done;
     let ra = Array1.sub sa_output ra_index !m in
     suffix_sort ra sa_output (free_size + str_len - (!m * 2)) !m !name;
@@ -190,7 +190,7 @@ let rec suffix_sort (str_input : t) (sa_output : t) (free_size : int)
       if !c0 < !c1 + !c_index then c_index := 1
       else if !c_index <> 0 then (
         Array1.unsafe_set sa_output (ra_index + !j) (i + 1);
-        decr j;
+        if !j >= 0 then decr j;
         c_index := 0);
       c1 := !c0
     done;
